@@ -1,31 +1,37 @@
-# ML-project
-# Identify signs of diabetic retinopathy in eye images
-Author: Iqra Imran 
+# Identify signs of diabetic retinopathy in eye images 
+Author: Iqra Imran
+
+# Introduction
+Diabetic retinopathy is a diabetes complication that affects eyes. It's caused by damage to the blood vessels of the light-sensitive tissue at the back of the eye (retina).At first diabetic retinopathy may cause no symptoms or only mild vision problems. Eventually, it can cause blindness.  For Physicians it’s a difficult task to recognize that weather patient is suffering with DR diseases or not because its resource demand is very high.
+ We first trained machine through training data and then test machine by given test data as an input. So we trained a machine that will predict weather patient is suffering with this disease or not.
+We are using multi-class image classification and trained machine using Convolution Neural Networks (CNNs) along with Softmax logistic regression.
+
 ### About DataSet
-  - we take dataset of images from kaggle competition platform which was comprised of 64Gb sized dataset we got dataset with the help of IT Deparment of University of Central Punjab. We take 16526 images out of avaible datset on kaggle.
+  - we take dataset of images from kaggle competition platform which was comprised of 64Gb sized dataset.  We take 16526 images out of avaible datset on kaggle.
   - We got a large set of high-resolution retina images taken under a variety of imaging conditions. A left and right field is provided for every subject. Images are labeled with a subject id as well as either left or right (e.g. 1_left.jpeg is the left eye of patient id 1).
 A learned machine is rating the presence of diabetic retinopathy in each image on a scale of 0 to 4, according to the following scale:
 
-    0 - No DR
-1 - Mild
-2 - Moderate
-3 - Severe
-4 - Proliferative DR we take 16526 images out of total images available. 
+0. No DR 
+1. Mild 
+2.  Moderate
+3.  Severe
+4.  Proliferative DR  
 
-#### Zipped file contain the following file 
-- iml-proj- it is containig python code 
+
+#### Description of files 
+- iml-proj- it is containig python code to training machine
 - test_data- containig 16526 images dataset with value 
-- train_data- containing 40 images dataset with values
+- train_data- containing 40 images dataset without values
 - model-containing saved model  
 
 ### How to make Test-data file 
-we placed a folder named Images (containing 16526 images) in the same folder where we places 'iml-proj.py' file and then we take their paths in an excel file by concatinating 3 columns,1st column contain the name of the folder which is "Images" in our case ,2nd column contain the names of image that we get simply by copy and pasting of names of images which is already available on kaggle, 3rd column contain the format of the images which is "Jpeg"in our case. After concatination we go One column with is containg the path of the images.
-After that we placed values of images another column. We got 2 column now. 
+we placed a folder named Images (containing 16526 images) in the same folder where we places 'iml-proj.py' file and then we take their paths in an excel file by concatinating 3 columns,1st column contain the name of the folder which is "Images" in our case ,2nd column contain the names of image that we get simply by copy and pasting of names of images which is already available on kaggle, 3rd column contain the format of the images which is "Jpeg"in our case. After concatination we got one column which is containg the path of the images.
+After that we placed values of images another column. We got 2 column now.
 
 ### How to make Train-data file
-we take sample of 40 dataset from test-data
+we take sample of 40 dataset from test-data without values
 
-### Tool and language 
+### Dependencies 
 
   - We are using Anaconda tool 
   - we use Python Language with following pacakges
@@ -84,3 +90,12 @@ network = regression(network, optimizer='adam',loss='categorical_crossentropy',l
  
 ### Results 
 Accuracy of our model is 75%.
+
+
+
+
+
+
+
+
+
