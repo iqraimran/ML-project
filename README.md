@@ -100,6 +100,10 @@ network = regression(network, optimizer='adam',loss='categorical_crossentropy',l
 ### Results 
 Accuracy of our model is 75%.
 
+### Screenshot
+
+![training_accuracy](https://user-images.githubusercontent.com/29872655/27997510-da7f1cd8-6512-11e7-999a-56adfff8dcaa.png)
+
 
 
 
