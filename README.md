@@ -17,6 +17,15 @@ A learned machine is rating the presence of diabetic retinopathy in each image o
 3.  Severe
 4.  Proliferative DR  
 
+### Data Images
+Left Image of no DR
+![10_left](https://user-images.githubusercontent.com/29872655/27997466-0de9b962-6512-11e7-87d0-5018fc2b2ff8.jpeg) 
+Right Image of No DR
+![10_right](https://user-images.githubusercontent.com/29872655/27997468-0df6641e-6512-11e7-82ee-b7066e1fa601.jpeg)
+Left Image of severe DR
+![16_left](https://user-images.githubusercontent.com/29872655/27997467-0df02b80-6512-11e7-86b2-f477925a38e0.jpeg)
+Right Image of severe DR
+![16_right](https://user-images.githubusercontent.com/29872655/27997469-0e0179ee-6512-11e7-93ba-28a0e7d2a2f6.jpeg)
 
 #### Description of files 
 - iml-proj- it is containig python code to training machine
